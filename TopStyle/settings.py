@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'TopStyle.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'topstyledb',
+        'NAME': 'tsdatabase',
         'HOST': 'localhost',
         'PORT': '3306',
-        'USER': 'artulidis',
+        'USER': 'tsdatabaseuser',
         'PASSWORD': 'Home=12928'
     }
 }
