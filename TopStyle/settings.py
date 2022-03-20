@@ -86,12 +86,15 @@ WSGI_APPLICATION = 'TopStyle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'tsdatabase',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'tsdatabaseuser',
-        'PASSWORD': 'Home=12928'
+        'PASSWORD': 'Home=12928',
+        'OPTIONS': {
+          'autocommit': True,
+        }
     }
 }
 
